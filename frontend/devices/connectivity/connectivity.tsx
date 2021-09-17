@@ -88,7 +88,7 @@ export class Connectivity
                 hover={this.hover}
                 hoveredConnection={this.state.hoveredConnection} />)}
           <hr style={{ marginLeft: "3rem" }} />
-          <Diagnosis statusFlags={this.props.flags} />
+          {/* <Diagnosis statusFlags={this.props.flags} /> */}
           {this.props.flags.userAPI && this.props.flags.userMQTT
             && this.props.flags.botAPI && this.props.flags.botMQTT
             && this.props.apiFirmwareValue

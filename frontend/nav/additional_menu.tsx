@@ -21,12 +21,12 @@ export const AdditionalMenu = (props: AccountMenuProps) => {
         {t("Logs")}
       </Link>
     </div>
-    <div className={"setup-link"}>
+    {/* <div className={"setup-link"}>
       <Link to="/app/designer/setup" onClick={props.close("accountMenuOpen")}>
         <i className="fa fa-magic" />
         {t("Setup")}
       </Link>
-    </div>
+    </div> */}
     <div className={"help-link"}>
       <Link to="/app/designer/help" onClick={props.close("accountMenuOpen")}>
         <i className="fa fa-question-circle" />

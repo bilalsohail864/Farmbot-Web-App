@@ -5,9 +5,9 @@ export namespace ToolTips {
 
   // Farm Designer: Groups
   export const SORT_DESCRIPTION =
-    trim(`When executing a sequence over a Group of locations, FarmBot will
+    trim(`When executing a sequence over a Group of locations, Ba'al Bot will
     travel to each group member in the order of the chosen sort method.
-    If the random option is chosen, FarmBot will travel in a random order
+    If the random option is chosen, Ba'al Bot will travel in a random order
     every time, so the ordering shown below will only be representative.`);
 
   export const CRITERIA_SELECTION_COUNT =
@@ -22,23 +22,23 @@ export namespace ToolTips {
 
   // Controls
   export const MOVE =
-    trim(`Use these manual control buttons to move FarmBot in realtime.
+    trim(`Use these manual control buttons to move Ba'al Bot in realtime.
     Press the arrows for relative movements or type in new coordinates
     and press GO for an absolute movement.
-    Tip: Press the Home button when you are done so FarmBot is ready to
+    Tip: Press the Home button when you are done so Ba'al Bot is ready to
     get back to work.`);
 
   export const WEBCAM =
-    trim(`If you have a webcam, you can view the video stream in this widget.
-    Press the edit button to update and save your webcam URL.
-    Note: Some webcam services do not allow webcam feeds to be embedded in
-    other sites. If you see a web browser error after adding a webcam feed,
-    there is unfortunately nothing FarmBot can do to fix the problem.
-    Please contact your webcam's customer support to see if the security
+    trim(`If you have a camera, you can view the video stream in this widget.
+    Press the edit button to update and save your camera URL.
+    Note: Some camera services do not allow camera feeds to be embedded in
+    other sites. If you see a application error after adding a camera feed,
+    there is unfortunately nothing Ba'al Bot can do to fix the problem.
+    Please contact your camera's customer support to see if the security
     policy for embedding feeds into other sites can be changed.`);
 
   export const PERIPHERALS =
-    trim(`Use these toggle switches to control FarmBot's peripherals in
+    trim(`Use these toggle switches to control Ba'al Bot peripherals in
     realtime. To edit and create new peripherals, press the EDIT button.
     Make sure to turn things off when you're done!`);
 
@@ -46,13 +46,13 @@ export namespace ToolTips {
     trim(`Pin a sequence in the sequence editor to add it to this list.`);
 
   export const SENSORS =
-    trim(`Add sensors here to monitor FarmBot's sensors.
+    trim(`Add sensors here to monitor Ba'al Bot sensors.
     To edit and create new sensors, press the EDIT button.`);
 
   export const SENSOR_HISTORY =
     trim(`View and filter historical sensor reading data.`);
 
-  // FarmBot OS
+  // Ba'al Bot OS
   export const VOLTAGE_STATUS =
     trim(`Raspberry Pi power status since last reboot. If supply voltage
     drops below the standard operational threshold the indicator will turn
@@ -60,14 +60,14 @@ export namespace ToolTips {
     indicating that a low voltage event has occurred. Low voltage may
     adversely affect WiFi and camera functionality.`);
 
-  // FarmBot OS Settings: Firmware
+  // Ba'al Bot OS Settings: Firmware
   export const FIRMWARE_VALUE_API =
     trim(`Firmware value from your choice in the dropdown to the left, as
-    understood by the Web App.`);
+    understood by the App.`);
 
   export const FIRMWARE_VALUE_FBOS =
     trim(`Firmware value reported from the firmware, as understood by
-    FarmBot OS.`);
+    Ba'al Bot OS.`);
 
   export const FIRMWARE_VALUE_MCU =
     trim(`Firmware value reported from the firmware.`);
@@ -76,7 +76,7 @@ export namespace ToolTips {
   export const HW_SETTINGS =
     trim(`Caution: Changing these settings to extreme values can cause
     hardware malfunction. Make sure to test any new settings to verify
-    that everything works as expected before letting your FarmBot use
+    that everything works as expected before letting your Ba'al Bot use
     them unsupervised.`);
 
   // Hardware Settings: Axes
@@ -305,7 +305,7 @@ export namespace ToolTips {
 
   export const PIN_BINDING_WARNING =
     trim(`Warning: Binding to a pin without a physical button and
-    pull-down resistor connected may put FarmBot into an unstable state.`);
+    pull-down resistor connected may put Ba'al Bot into an unstable state.`);
 
   // Hardware Settings: Pin Guard
   export const PIN_GUARD_PIN_NUMBER =
@@ -314,24 +314,24 @@ export namespace ToolTips {
 
   // Hardware Parameter Management
   export const PARAMETER_LOAD_PROGRESS =
-    trim(`FarmBot adoption of hardware parameter changes. Tip: If progress
+    trim(`Ba'al Bot adoption of hardware parameter changes. Tip: If progress
     does not reach 100% within a few minutes, press RESEND.`);
 
   export const PARAMETER_IMPORT =
     trim(`Paste the output from EXPORT PARAMETERS into the text field and
-    press IMPORT to import new hardware parameters to your FarmBot.`);
+    press IMPORT to import new hardware parameters to your Ba'al Bot.`);
 
   // Photos
   export const WEED_DETECTOR =
-    trim(`Detect weeds using FarmBot's camera and display them on the
+    trim(`Detect weeds using Ba'al Bot camera and display them on the
     Farm Designer map.`);
 
   export const SOIL_HEIGHT_DETECTION =
-    trim(`Detect soil height using FarmBot's camera and display the results
+    trim(`Detect soil height using Ba'al Bot camera and display the results
     on the Farm Designer map.`);
 
   export const CAMERA_CALIBRATION =
-    trim(`Calibrate FarmBot's camera for use in the weed detection software.`);
+    trim(`Calibrate Ba'al Bot camera for use in the weed detection software.`);
 
   export const RED_DOT_CAMERA_CALIBRATION =
     trim(`Genesis v1.2 through v1.4 bots did not include the camera
@@ -340,7 +340,7 @@ export namespace ToolTips {
 
   export const CAMERA_CALIBRATION_CARD_SHOP_LINK =
     trim(`Camera calibration cards are available in the shop and can be
-    used with any FarmBot version.`);
+    used with any Ba'al Bot version.`);
 
   export const INVERT_HUE_SELECTION =
     trim(`Invert the range of hues selected. Typically used to select the
@@ -352,7 +352,7 @@ export namespace ToolTips {
     (default: {{ defaultSeparation }})`);
 
   export const CALIBRATION_OBJECT_AXIS =
-    trim(`The FarmBot axis along which the calibration objects are aligned.
+    trim(`The Ba'al Bot axis along which the calibration objects are aligned.
     (default: {{ defaultAxis }})`);
 
   export const CAMERA_OFFSET =
@@ -363,19 +363,19 @@ export namespace ToolTips {
     (default: (x: {{ defaultX }}, y: {{ defaultY }}))`);
 
   export const IMAGE_BOT_ORIGIN_LOCATION =
-    trim(`FarmBot origin (home) location in images. If the origin does not
+    trim(`Ba'al Bot origin (home) location in images. If the origin does not
     correspond to an image corner, rotate the camera until one does.
     (default: {{ defaultOrigin }})`);
 
   export const COORDINATE_SCALE =
-    trim(`Image pixel to FarmBot coordinate scale. Typically between
-    0.1 and 2, this value matches image scale with the FarmBot coordinate
+    trim(`Image pixel to Ba'al Bot coordinate scale. Typically between
+    0.1 and 2, this value matches image scale with the Ba'al Bot coordinate
     system. (default: {{ defaultScale }} (uncalibrated))`);
 
   export const IMAGE_ROTATION_ANGLE =
     trim(`Camera rotation in degrees. This value should be minimized
     (to near zero) by rotating the camera in its mount until it is aligned
-    with FarmBot's axes. (default: {{ defaultAngle }})`);
+    with Ba'al Bot axes. (default: {{ defaultAngle }})`);
 
   export const BLUR =
     trim(`Image blur kernel size. Must be an odd number greater than 1.
@@ -403,14 +403,14 @@ export namespace ToolTips {
 
   // Sequences
   export const SEQUENCE_COMMANDS =
-    trim(`These are the most basic commands FarmBot can execute. Drag and drop
+    trim(`These are the most basic commands Ba'al Bot can execute. Drag and drop
     them to create sequences for watering, planting seeds, measuring soil
     properties, and more.`);
 
   export const SEQUENCE_EDITOR =
     trim(`Drag and drop commands here to create sequences for watering,
     planting seeds, measuring soil properties, and more.
-    Press the Test button to immediately try your sequence with FarmBot.
+    Press the Test button to immediately try your sequence with Ba'al Bot.
     You can also edit, copy, and delete existing sequences;
     assign a color; and give your commands custom names.`);
 
@@ -423,55 +423,55 @@ export namespace ToolTips {
     trim(`No location selected. Using default value.`);
 
   export const COMPUTED_MOVE =
-    trim(`The Move step instructs FarmBot to move to the specified
+    trim(`The Move step instructs Ba'al Bot to move to the specified
     coordinate or distance from its current location.`);
 
   export const SAFE_Z =
-    trim(`If enabled, FarmBot will: (1) Move Z to the Safe Z height,
+    trim(`If enabled, Ba'al Bot will: (1) Move Z to the Safe Z height,
     (2) Move X and Y to the new location, and (3) Move Z to the new location`);
 
   export const MOVE_ABSOLUTE =
-    trim(`The Move To step instructs FarmBot to move to the specified
-    coordinate regardless of the current position. For example, if FarmBot is
+    trim(`The Move To step instructs Ba'al Bot to move to the specified
+    coordinate regardless of the current position. For example, if Ba'al Bot is
     currently at X=1000, Y=1000 and it receives a Move To where X=0 and
-    Y=3000, then FarmBot will move to X=0, Y=3000. If FarmBot must move in
+    Y=3000, then Ba'al Bot will move to X=0, Y=3000. If Ba'al Bot must move in
     multiple directions, it will move diagonally. If you require straight
     movements along one axis at a time, use multiple Move To steps.
-    Offsets allow you to more easily instruct FarmBot to move to a location,
+    Offsets allow you to more easily instruct Ba'al Bot to move to a location,
     but offset from it by the specified amount. For example moving to just
-    above where a peripheral is located. Using offsets lets FarmBot do the
+    above where a peripheral is located. Using offsets lets Ba'al Bot do the
     math for you.`);
 
   export const MOVE_RELATIVE =
-    trim(`The Move Relative step instructs FarmBot to move the specified
-    distance from its current location. For example, if FarmBot is
+    trim(`The Move Relative step instructs Ba'al Bot to move the specified
+    distance from its current location. For example, if Ba'al Bot is
     currently at X=1000, Y=1000 and it receives a Move Relative
-    where X=0 and Y=3000, then FarmBot will move to X=1000, Y=4000.
-    If FarmBot must move in multiple directions, it will move diagonally.
+    where X=0 and Y=3000, then Ba'al Bot will move to X=1000, Y=4000.
+    If Ba'al Bot must move in multiple directions, it will move diagonally.
     If you require straight movements along one axis at a time,
     use multiple Move Relative steps. Move Relative steps should be
     preceded by a Move To step to ensure you are starting from a known
     location.`);
 
   export const WRITE_PIN =
-    trim(`The Control Peripheral step instructs FarmBot to set the
+    trim(`The Control Peripheral step instructs Ba'al Bot to set the
     specified pin on the Arduino to the specified mode and value.
     Use the digital pin mode for on (1) and off (0) control,
     and analog pin mode for PWM (pulse width modulation) (0-255).`);
 
   export const READ_PIN =
-    trim(`The Read Sensor step instructs FarmBot to read the
+    trim(`The Read Sensor step instructs Ba'al Bot to read the
     current value of the specified sensor or peripheral.
     Pin Mode: Use digital for a 0 (LOW) or 1 (HIGH) response,
     and analog for a voltage reading (0-1023 for 0-5V).`);
 
   export const WAIT =
-    trim(`The Wait step instructs FarmBot to wait for the specified amount
+    trim(`The Wait step instructs Ba'al Bot to wait for the specified amount
     of time. Use it in combination with the Control Peripheral step to
     water for a length of time.`);
 
   export const SEND_MESSAGE =
-    trim(`The Send Message step instructs FarmBot to send a custom message
+    trim(`The Send Message step instructs Ba'al Bot to send a custom message
     to the logs (and toast message and/or email, if selected). This can
     help you with debugging your sequences.`);
 
@@ -533,7 +533,7 @@ export namespace ToolTips {
     trim(`Calibrate your camera in the Photos panel before detecting weeds.`);
 
   export const MARK_AS =
-    trim(`The Mark As step allows FarmBot to programmatically edit the
+    trim(`The Mark As step allows Ba'al Bot to programmatically edit the
     properties of the UTM, plants, and weeds from within a sequence.
     For example, you can mark a plant as "planted" during a seeding
     sequence or mark a weed as "removed" after removing it.`);
@@ -548,7 +548,7 @@ export namespace ToolTips {
     trim(`Toggle a digital pin on or off.`);
 
   export const MOVE_TO_HOME =
-    trim(`Move FarmBot to home for the provided axis.`);
+    trim(`Move Ba'al Bot to home for the provided axis.`);
 
   export const ASSERTION =
     trim(`Evaluate Lua commands. For power users and software developers.`);
@@ -557,10 +557,10 @@ export namespace ToolTips {
     trim(`Execute Lua commands. For power users and software developers.`);
 
   export const FIRMWARE_ACTION =
-    trim(`FarmBot OS or micro-controller firmware action.`);
+    trim(`Ba'al Bot OS or micro-controller firmware action.`);
 
   export const SYSTEM_ACTION =
-    trim(`FarmBot OS action.`);
+    trim(`Ba'al Bot OS action.`);
 
   export const UNKNOWN_STEP =
     trim(`Unable to properly display this step.`);
@@ -574,7 +574,7 @@ export namespace ToolTips {
     to run every other day.`);
 
   export const REGIMEN_EDITOR =
-    trim(`Regimens allow FarmBot to take care of a plant throughout its
+    trim(`Regimens allow Ba'al Bot to take care of a plant throughout its
     entire life. A regimen consists of many sequences that are scheduled
     to run based on the age of the plant. Regimens are applied to plants
     from the farm designer (coming soon) and can be re-used on many plants
@@ -602,9 +602,9 @@ export namespace Content {
     trim(`Please check your email to confirm email address changes.`);
 
   export const ACCOUNT_PASSWORD_CHANGE =
-    trim(`Upon successful password change, your FarmBot will soft reset
+    trim(`Upon successful password change, your Ba'al Bot Bot will soft reset
     allowing you to configure it with the updated credentials.
-    You will also be logged out of other browser sessions. Continue?`);
+    You will also be logged out of other application sessions. Continue?`);
 
   export const ACCOUNT_RESET_WARNING =
     trim(`WARNING! Resetting your account will permanently delete all of your
@@ -612,12 +612,12 @@ export namespace Content {
     All app settings and device settings will be reset to default values.
     This is useful if you want to delete all data to start from scratch
     while avoiding having to fully delete your account, re-signup, and
-    re-configure your FarmBot. Note that when FarmBot syncs
-    after resetting your account, your FarmBot will delete all of its
+    re-configure your Ba'al Bot. Note that when Ba'al Bot syncs
+    after resetting your account, your Ba'al Bot will delete all of its
     stored Sequences, etc, because your account will no longer have any
     of these resources until you create new ones. Furthermore, upon reset
     any customized device settings will be immediately overwritten with
-    the default values downloaded from the reset web app account.`);
+    the default values downloaded from the reset app account.`);
 
   export const TYPE_PASSWORD_TO_RESET =
     trim(`If you are sure you want to reset your account, type in
@@ -626,12 +626,12 @@ export namespace Content {
   export const ACCOUNT_DELETE_WARNING =
     trim(`WARNING! Deleting your account will permanently delete all of your
     Sequences, Regimens, Events, and Farm Designer data. Upon deleting your
-    account, FarmBot will cease to function and become inaccessible until it is
-    paired with another web app account. To do this, you will need to reboot
-    your FarmBot so that is goes back into configuration mode for pairing with
-    another user account. When this happens, all of the data on your FarmBot
+    account, Ba'al Bot will cease to function and become inaccessible until it is
+    paired with another app account. To do this, you will need to reboot
+    your Ba'al Bot so that is goes back into configuration mode for pairing with
+    another user account. When this happens, all of the data on your Ba'al Bot
     will be overwritten with the new account's data. If the account is brand
-    new, then FarmBot will become a blank slate.`);
+    new, then Ba'al Bot will become a blank slate.`);
 
   export const TYPE_PASSWORD_TO_DELETE =
     trim(`If you are sure you want to delete your account, type in
@@ -647,8 +647,8 @@ export namespace Content {
 
   // Messages
   export const SEED_DATA_SELECTION =
-    trim(`To finish setting up your account and FarmBot, please select which
-    FarmBot you have. Once you make a selection, we'll automatically add some
+    trim(`To finish setting up your account and Ba'al Bot, please select which
+    Ba'al Bot you have. Once you make a selection, we'll automatically add some
     tools, sensors, peripherals, sequences, and more to get you up and running
     faster. If you want to start completely from scratch, feel free to select
     "Custom bot" and we won't change a thing.`);
@@ -663,8 +663,8 @@ export namespace Content {
     and features at your fingertips.`);
 
   export const READ_THE_DOCS =
-    trim(`The FarmBot web app is a powerful tool that allows you to control
-    and configure your FarmBot in any way you want. To give you so much power,
+    trim(`The Ba'al Bot app is a powerful tool that allows you to control
+    and configure your Ba'al Bot in any way you want. To give you so much power,
     we've packed the app with a ton of settings, features, and pages, which
     can be a lot to understand. That's why we've created comprehensive written
     documentation and videos to teach you how to use everything.`);
@@ -675,7 +675,7 @@ export namespace Content {
 
   export const MESSAGE_CENTER_WELCOME =
     trim(`Here you'll find important information about your account, your
-    FarmBot, and news such as new feature announcements. Look for the blue
+    Ba'al Bot, and news such as new feature announcements. Look for the blue
     badge in the main menu to see when new messages are available.`);
 
   export const MESSAGE_DISMISS =
@@ -684,18 +684,18 @@ export namespace Content {
 
   export const FIRMWARE_MISSING =
     trim(`Please choose a firmware version to install. Your choice should be
-    based on the type of electronics in your FarmBot according to the reference
+    based on the type of electronics in your Ba'al Bot according to the reference
     table below.`);
 
   export const DEMO_ACCOUNT =
-    trim(`Thanks for trying out the FarmBot web app!
+    trim(`Thanks for trying out the Ba'al Bot app!
     This is a great way to introduce yourself to building sequences,
     regimens, events, and designing a virtual garden.`);
 
   export const DEMO_NOTE =
     trim(`not all features of the app will work because there is not a
-    real FarmBot connected to this account. Additionally, keep in mind
-    that when you leave this web page, the demo account and all data will
+    real Ba'al Bot connected to this account. Additionally, keep in mind
+    that when you leave this page, the demo account and all data will
     be deleted.`);
 
   export const MAKE_A_REAL_ACCOUNT =
@@ -703,7 +703,7 @@ export namespace Content {
     real account at`);
 
   export const SETUP_INCOMPLETE =
-    trim(`Finish setting up your account and FarmBot using our setup wizard.
+    trim(`Finish setting up your account and Ba'al Bot using our setup wizard.
     To open the setup wizard, click the **Setup: {{ percentComplete }}**
     button in the main navigation bar.`);
 
@@ -714,10 +714,10 @@ export namespace Content {
 
   export const STANDARD_SUPPORT =
     trim(`Get in touch with our support staff. Only available to customers
-    who have purchased a full FarmBot kit from FarmBot Inc.`);
+    who have purchased a full Ba'al Bot kit from Ba'al Bot Inc.`);
 
   export const FORUM_SUPPORT =
-    trim(`Have a question for the greater FarmBot community? Get help by
+    trim(`Have a question for the greater Ba'al Bot community? Get help by
     asking our global community of users on the`);
 
   export const FEEDBACK_NOTICE =
@@ -727,12 +727,12 @@ export namespace Content {
     you, please include your phone number or preferred means of contact.`);
 
   export const MUST_REGISTER =
-    trim(`You must register your original FarmBot order number before
+    trim(`You must register your original Ba'al Bot order number before
     contacting support.`);
 
   // App Settings
   export const INTERNATIONALIZE_WEB_APP =
-    trim(`Turn off to set Web App to English.`);
+    trim(`Turn off to set App to English.`);
 
   export const TIME_FORMAT_24_HOUR =
     trim(`Display time using the 24-hour notation,
@@ -742,7 +742,7 @@ export namespace Content {
     trim(`Display seconds in time, i.e., 10:00:00am instead of 10:00am`);
 
   export const HIDE_WEBCAM_WIDGET =
-    trim(`If not using a webcam, use this setting to remove the
+    trim(`If not using a camera, use this setting to remove the
     widget from the Controls panel.`);
 
   export const HIDE_SENSORS_WIDGET =
@@ -750,29 +750,29 @@ export namespace Content {
     panel from the Farm Designer.`);
 
   export const BROWSER_SPEAK_LOGS =
-    trim(`Have the browser also read aloud log messages on the
-    "Speak" channel that are spoken by FarmBot.`);
+    trim(`Have the application also read aloud log messages on the
+    "Speak" channel that are spoken by Ba'al Bot.`);
 
   export const DISCARD_UNSAVED_CHANGES =
     trim(`Don't ask about saving work before
-    closing browser tab. Warning: may cause loss of data.`);
+    closing appliaction tab. Warning: may cause loss of data.`);
 
   export const DISCARD_UNSAVED_CHANGES_CONFIRM =
     trim(`Warning! When enabled, any unsaved changes
     will be discarded when refreshing or closing the page. Are you sure?`);
 
   export const EMERGENCY_UNLOCK_CONFIRM_CONFIG =
-    trim(`Confirm when unlocking FarmBot after an emergency stop.`);
+    trim(`Confirm when unlocking Ba'al Bot after an emergency stop.`);
 
   export const CONFIRM_EMERGENCY_UNLOCK_CONFIRM_DISABLE =
     trim(`Warning! When disabled, clicking the UNLOCK button will immediately
-    unlock FarmBot instead of confirming that it is safe to do so.
-    As a result, double-clicking the E-STOP button may not stop FarmBot.
+    unlock Ba'al Bot instead of confirming that it is safe to do so.
+    As a result, double-clicking the E-STOP button may not stop Ba'al Bot.
     Are you sure you want to disable this feature?`);
 
   export const USER_INTERFACE_READ_ONLY_MODE =
     trim(`Disallow account data changes. This does
-    not prevent Farmwares or FarmBot OS from changing settings.`);
+    not prevent Farmwares or Ba'al Bot OS from changing settings.`);
 
   // Sequence Settings
   export const CONFIRM_STEP_DELETION =
@@ -790,7 +790,7 @@ export namespace Content {
 
   export const DISCARD_UNSAVED_SEQUENCE_CHANGES =
     trim(`Don't ask about saving sequence work before
-    closing browser tab. Warning: may cause loss of data.`);
+    closing application tab. Warning: may cause loss of data.`);
 
   export const DISCARD_UNSAVED_SEQUENCE_CHANGES_CONFIRM =
     trim(`Warning! When enabled, any unsaved changes to sequences
@@ -799,63 +799,63 @@ export namespace Content {
   export const VIEW_CELERY_SCRIPT =
     trim(`View raw data representation of sequence steps.`);
 
-  // FarmBot OS Settings
+  // Ba'al Bot OS Settings
   export const DIFFERENT_TZ_WARNING =
-    trim(`Note: The selected timezone for your FarmBot is different than
-    your local browser time.`);
+    trim(`Note: The selected timezone for your Ba'al Bot is different than
+    your local application time.`);
 
   export const UNSTABLE_RELEASE_CHANNEL_WARNING =
-    trim(`Warning! Leaving the stable FarmBot OS release channel may reduce
-    FarmBot system stability. Are you sure?`);
+    trim(`Warning! Leaving the stable Ba'al Bot OS release channel may reduce
+    Ba'al Bot system stability. Are you sure?`);
 
   export const DEVICE_NEVER_SEEN =
     trim(`The device has never been seen. Most likely,
     there is a network connectivity issue on the device's end.`);
 
   export const TOO_OLD_TO_UPDATE =
-    trim(`Please re-flash your FarmBot's SD card.`);
+    trim(`Please re-flash your Ba'al Bot SD card.`);
 
   export const OS_AUTO_UPDATE =
-    trim(`When enabled, FarmBot OS will automatically download and install
+    trim(`When enabled, Ba'al Bot OS will automatically download and install
     software updates at the chosen time.`);
 
-  // FarmBot OS Settings: Firmware
+  // Ba'al Bot OS Settings: Firmware
   export const RESTART_FIRMWARE =
     trim(`Restart the Farmduino or Arduino firmware.`);
 
-  // FarmBot OS Settings: Power and Reset
+  // Ba'al Bot OS Settings: Power and Reset
   export const RESTART_FARMBOT =
-    trim(`This will restart FarmBot's Raspberry Pi and controller
+    trim(`This will restart Ba'al Bot Raspberry Pi and controller
     software.`);
 
   export const SHUTDOWN_FARMBOT =
-    trim(`This will shutdown FarmBot's Raspberry Pi. To turn it
-    back on, unplug FarmBot and plug it back in.`);
+    trim(`This will shutdown Ba'al Bot Raspberry Pi. To turn it
+    back on, unplug Ba'al Bot and plug it back in.`);
 
   export const SOFT_RESET_WARNING =
-    trim(`Soft resetting your FarmBot will revoke your FarmBot's ability
-    to connect to your web app account and your home WiFi network.
+    trim(`Soft resetting your Ba'al Bot will revoke your Ba'al Bot ability
+    to connect to your app account and your home WiFi network.
     Upon soft resetting, your device will go into Configurator mode.`);
 
   export const SOFT_RESET_ALERT =
-    trim(`Warning: This will erase data stored on your FarmBot's SD card,
-    requiring you to reconfigure FarmBot so that it can reconnect to your
-    WiFi network and web app account. Soft resetting the device will
-    not delete data stored in your web app account. Are you sure you wish
+    trim(`Warning: This will erase data stored on your Ba'al Bot SD card,
+    requiring you to reconfigure Ba'al Bot so that it can reconnect to your
+    WiFi network and app account. Soft resetting the device will
+    not delete data stored in your app account. Are you sure you wish
     to continue?`);
 
   export const HARD_RESET_WARNING =
-    trim(`Hard reset your FarmBot by reflashing the latest version of
-    FarmBot OS onto the microSD card. This will erase all data from the
+    trim(`Hard reset your Ba'al Bot by reflashing the latest version of
+    Ba'al Bot OS onto the microSD card. This will erase all data from the
     device and allow you to start from a clean slate. This is recommended
     if you are experiencing problems with your setup. Upon hard resetting,
     your device will go into Configurator mode.`);
 
   export const OS_RESET_WARNING =
-    trim(`{{ resetMethod }} resetting your FarmBot will not affect any of
-    your data or settings from your web app account, allowing you to do a
+    trim(`{{ resetMethod }} resetting your Ba'al Bot will not affect any of
+    your data or settings from your app account, allowing you to do a
     complete restore to your device once it is back online and paired with
-    your web app account.`);
+    your app account.`);
 
   export const AUTO_SOFT_RESET =
     trim(`Automatically soft reset when the WiFi network cannot be
@@ -874,12 +874,12 @@ export namespace Content {
 
   // Hardware Settings: Stall Detection
   export const STALL_DETECTION_NOT_AVAILABLE =
-    trim(`Stall detection for FarmBot Express bots is not yet available.
+    trim(`Stall detection for Ba'al Bot Express bots is not yet available.
     Once it is ready, you will receive a message in the Message Center.
     We thank you for your patience.`);
 
   export const STALL_DETECTION_IN_BETA =
-    trim(`Warning: Stall detection for FarmBot Express bots is now
+    trim(`Warning: Stall detection for Ba'al Bot Express bots is now
     available as a public beta. While you may enable stall detection for
     all three axes, you may not achieve desirable or consistent results
     for some or any of the axes. If you experience any issues, we advise
@@ -889,9 +889,9 @@ export namespace Content {
 
   // Hardware Settings: Limit Switches
   export const LIMIT_SWITCH_WARNING =
-    trim(`Warning: Limit switches are NOT included with standard FarmBot
+    trim(`Warning: Limit switches are NOT included with standard Ba'al Bot
     Genesis or Express kits. Do NOT enable limit switches unless you have
-    built your own FarmBot with them or added them to a stock kit.`);
+    built your own Ba'al Bot with them or added them to a stock kit.`);
 
   // Hardware Settings: Parameter Management
   export const RESTORE_DEFAULT_HARDWARE_SETTINGS =
@@ -911,7 +911,7 @@ export namespace Content {
     trim(`Enable plant animations in the garden map.`);
 
   export const VIRTUAL_TRAIL =
-    trim(`Display a virtual trail for FarmBot in the garden map to show
+    trim(`Display a virtual trail for Ba'al Bot in the garden map to show
     movement and watering history while the map is open. Toggling this setting
     will clear data for the current trail.`);
 
@@ -954,24 +954,24 @@ export namespace Content {
     refreshing the page.`);
 
   export const MQTT_DISCONNECTED =
-    trim(`Your web browser is unable to connect to the message broker.
+    trim(`Your application is unable to connect to the message broker.
     You might be behind a firewall or disconnected from the Internet. Check
     your network settings. View the connection status for more details.`);
 
   export const WEB_APP_DISCONNECTED =
-    trim(`Your web browser is unable to communicate with the
-    web app server. Make sure you are connected to the Internet.`);
+    trim(`Your application is unable to communicate with the
+   app server. Make sure you are connected to the Internet.`);
 
   export const MALFORMED_MESSAGE_REC_UPGRADE =
-    trim(`FarmBot sent a malformed message. You may need to upgrade
-    FarmBot OS. Please upgrade FarmBot OS and log back in.`);
+    trim(`Ba'al Bot sent a malformed message. You may need to upgrade
+    Ba'al Bot OS. Please upgrade Ba'al Bot OS and log back in.`);
 
   export const OLD_FBOS_REC_UPGRADE =
-    trim(`Your version of FarmBot OS is outdated and will soon no longer
+    trim(`Your version of Ba'al Bot OS is outdated and will soon no longer
     be supported. Please update your device as soon as possible.`);
 
   export const OLD_FBOS_UNSUPPORTED =
-    trim(`You are running an old version of FarmBot OS that is no longer
+    trim(`You are running an old version of Ba'al Bot OS that is no longer
     supported.`);
 
   export const EXPERIMENTAL_WARNING =
@@ -980,7 +980,7 @@ export namespace Content {
     app. This feature may disappear or break at any time.`);
 
   export const FORCE_REFRESH_CONFIRM =
-    trim(`A new version of the FarmBot web app has been released.
+    trim(`A new version of the Ba'al Bot app has been released.
     Refresh page?`);
 
   export const FORCE_REFRESH_CANCEL_WARNING =
@@ -1016,10 +1016,10 @@ export namespace Content {
     for: `);
 
   export const REBOOT_STEP =
-    trim(`Power cycle FarmBot's onboard computer.`);
+    trim(`Power cycle Ba'al Bot onboard computer.`);
 
   export const SHUTDOWN_STEP =
-    trim(`Power down FarmBot's onboard computer.`);
+    trim(`Power down Ba'al Bot onboard computer.`);
 
   export const ESTOP_STEP =
     trim(`Unlocking a device requires user intervention.`);
@@ -1037,7 +1037,7 @@ export namespace Content {
     trim(`Publishing this sequence will create a public version released
     under the MIT License. Once published, anyone may find and use the
     sequence free of charge for tasks including but not limited to:
-    importing the sequence into their FarmBot account to view and use it as
+    importing the sequence into their Ba'al Bot account to view and use it as
     they deem fit, upgrading their copy to other published versions, making
     changes to their copy, publishing, distributing, and even selling their
     copy. You can publish new versions of this sequence at any time, which
@@ -1053,14 +1053,14 @@ export namespace Content {
 
   export const IMPORT_SEQUENCE =
     trim(`Importing this sequence will allow you to use it with your
-    FarmBot and make changes. If the original author of the sequence
+    Ba'al Bot and make changes. If the original author of the sequence
     publishes a new version, you will have the option to upgrade your copy.`);
 
   export const IMPORTED_SEQUENCE =
     trim(`This sequence was imported from a publicly shared sequence. If
     the original author publishes a new version, you may upgrade your copy.
     Upgrading will overwrite your copy with the contents of the new version.
-    It is recommended you check your FarmBot continues operating as expected
+    It is recommended you check your Ba'al Bot continues operating as expected
     after any upgrades.`);
 
   // Regimens
@@ -1077,7 +1077,7 @@ export namespace Content {
 
   export const MOVE_MODE_DESCRIPTION =
     trim(`Click a spot in the grid to choose a location.
-    Once selected, press button to move FarmBot to this position.
+    Once selected, press button to move Ba'al Bot to this position.
     Press the back arrow to exit.`);
 
   export const CREATE_POINTS_DESCRIPTION =
@@ -1156,13 +1156,13 @@ export namespace Content {
     this is a concern.`);
 
   export const FARM_EVENT_TZ_WARNING =
-    trim(`Note: Times displayed according to FarmBot's local time, which
-    is currently different from your browser's time. Timezone data is
+    trim(`Note: Times displayed according to Ba'al Bot local time, which
+    is currently different from your application's time. Timezone data is
     configurable in the Settings panel).`);
 
   export const FIRST_PARTY_WARNING =
     trim(`Are you sure you want to delete this first party farmware?
-    Doing so will limit the functionality of your FarmBot and
+    Doing so will limit the functionality of your Ba'al Bot and
     may cause unexpected behavior.`);
 
   export const MISSING_EXECUTABLE =
@@ -1171,7 +1171,7 @@ export namespace Content {
 
   // Farmware
   export const NO_IMAGES_YET =
-    trim(`You haven't yet taken any photos with your FarmBot.
+    trim(`You haven't yet taken any photos with your Ba'al Bot.
     Once you do, they will show up here.`);
 
   export const PROCESSING_PHOTO =
@@ -1189,13 +1189,13 @@ export namespace Content {
 
   export const CAMERA_CALIBRATION_RED_OBJECTS =
     trim(`Place the two red calibration objects 100mm apart and aligned
-    with FarmBot's axes on the soil underneath the camera.`);
+    with Ba'al Bot axes on the soil underneath the camera.`);
 
   export const CAMERA_CALIBRATION_GRID_PATTERN =
     trim(`Place the camera calibration card face down on the soil
     underneath the camera, with the grid of white circles facing up.
     Can be in any orientation but must be fully visible to the camera.
-    Caution: FarmBot will make three small x-axis and y-axis movements
+    Caution: Ba'al Bot will make three small x-axis and y-axis movements
     during calibration.`);
 
   export const FARMWARE_ENV_EDITOR_WARNING =
@@ -1207,11 +1207,11 @@ export namespace Content {
 
   // Other
   export const DOWNLOAD_FBOS =
-    trim(`Download the version of FarmBot OS that corresponds to your
-    FarmBot kit and its internal computer.`);
+    trim(`Download the version of Ba'al Bot OS that corresponds to your
+    Ba'al Bot kit and its internal computer.`);
 
   export const UNSUPPORTED_BROWSER =
-    trim(`Your web browser may not work properly with the FarmBot Web App.
+    trim(`Your application may not work properly with the Ba'al Bot App.
     If you experience any issues, try using a recent version of Chrome,
     Firefox, or Edge.`);
 }
@@ -1219,7 +1219,7 @@ export namespace Content {
 export namespace TourContent {
   // Getting started
   export const GETTING_STARTED =
-    trim(`Welcome to the FarmBot web app! In this tour you'll become
+    trim(`Welcome to the Ba'al Bot app! In this tour you'll become
     familiar with the overall organization of the app.`);
 
   export const PLANTS_PANEL =
@@ -1274,22 +1274,22 @@ export namespace TourContent {
     weeds in your garden. Mousing over a weed in the list will highlight
     it in the map and vice versa. Newly detected weeds will appear in the
     PENDING category, which you must periodically approve to be listed
-    in the ACTIVE category. Once a weed has been dealt with by FarmBot, it
+    in the ACTIVE category. Once a weed has been dealt with by Ba'al Bot, it
     can be moved to the REMOVED category with a Mark As sequence command.
     Clicking a weed will open up the weed details panel where you can
     manually edit it.`);
 
   export const CONTROLS_PANEL =
-    trim(`This is the controls panel. Here you can control your FarmBot in
+    trim(`This is the controls panel. Here you can control your Ba'al Bot in
     realtime by pressing the movement arrow buttons, toggling peripherals,
     and executing pinned sequences. You can also view current status
-    information about your FarmBot including its position and an optional
+    information about your Ba'al Bot including its position and an optional
     webcam stream.`);
 
   export const PHOTOS_PANEL =
     trim(`This is the photos panel. Here you can view and manage all of the
     photos of your garden. Additionally, here is where you can calibrate
-    FarmBot's camera and weed detection settings to fine tune the
+    Ba'al Bot camera and weed detection settings to fine tune the
     performance for your lighting conditions and soil type.`);
 
   export const TOOLS_PANEL =
@@ -1302,7 +1302,7 @@ export namespace TourContent {
     trim(`This is the message center. Here you can view and manage setup
     cards and announcements. Dismiss items you are finished with by
     pressing the X in the top right of a card. Check back often for new
-    feature announcements and important information about your FarmBot.`);
+    feature announcements and important information about your Ba'al Bot.`);
 
   export const HELP_PANEL =
     trim(`This is the help panel. Here you can browse the documentation or
@@ -1311,26 +1311,26 @@ export namespace TourContent {
 
   export const SETTINGS_PANEL =
     trim(`This is the settings panel. Here you can view and manage all of
-    your FarmBot and account settings. Refer to the tooltips and
+    your Ba'al Bot and account settings. Refer to the tooltips and
     documentation for information about each setting.`);
 
   export const CONNECTIVITY_POPUP =
     trim(`This is the connectivity popup. Click it to view information
-    about the connection between your web browser, your FarmBot, and the
-    FarmBot web app servers. Whenever your FarmBot is online and ready for
+    about the connection between your application, your Ba'al Bot, and the
+    Ba'al Bot app servers. Whenever your Ba'al Bot is online and ready for
     action, you will see a green checkmark.`);
 
   export const SYNC_STATUS =
     trim(`This is the sync status indicator. Whenever you edit a resource
-    in the web app such as a plant, sequence, or event, your FarmBot will
+    in the app such as a plant, sequence, or event, your Ba'al Bot will
     download (sync) this information. Syncing may take up to 10 seconds
-    depending on your internet connection, and longer when FarmBot first
+    depending on your internet connection, and longer when Ba'al Bot first
     boots up.`);
 
   export const ESTOP_BUTTON =
     trim(`This is the E-STOP button, allowing you to emergency stop any
-    movements and turn off all of FarmBot's peripherals in case something
-    is going wrong. After E-STOPPING FarmBot, you will need to click the
+    movements and turn off all of Ba'al Bot peripherals in case something
+    is going wrong. After E-STOPPING Ba'al Bot, you will need to click the
     same button to UNLOCK the device before resuming execution of any
     commands.`);
 
@@ -1341,7 +1341,7 @@ export namespace TourContent {
   export const GETTING_STARTED_END =
     trim(`Thanks for taking the Getting Started Tour! You're now ready to
     dive into the details of each panel and begin planting your first
-    garden with FarmBot. Check out our other tours for practical
+    garden with Ba'al Bot. Check out our other tours for practical
     step-by-step help, and refer to our in-depth documentation in case you
     get stuck on anything.`);
 
@@ -1410,8 +1410,8 @@ export namespace TourContent {
     Group Members section, then advance the tour.`);
 
   export const SORT_BY =
-    trim(`When you program your FarmBot to perform an operation on a group
-    of plants, you may want to control the ordering at which FarmBot visits
+    trim(`When you program your Ba'al Bot to perform an operation on a group
+    of plants, you may want to control the ordering at which Ba'al Bot visits
     each plant in the group. To do this, select one of the available Sort
     By methods. Once you have chosen a method, advance the tour.`);
 
@@ -1429,44 +1429,44 @@ export namespace TourContent {
   // Setting up slots
   export const SETTING_UP_SLOTS_TOOLS_PANEL =
     trim(`This is the tools panel. Here you can add, edit, and view your
-    FarmBot's tools and seed containers as well the slots they are loaded
+    Ba'al Bot tools and seed containers as well the slots they are loaded
     into. Mousing over a slot will highlight it in the map and vice versa.
-    We've already added all of the items included with your FarmBot kit.
+    We've already added all of the items included with your Ba'al Bot kit.
     Your job now is to input the exact location of the slots corresponding
     to where you installed them in real life. Click the first slot in the
     list and then advance the tour.`);
 
   export const EDIT_SLOT_PANEL =
-    trim(`This is the edit slot panel where you will let FarmBot know the
+    trim(`This is the edit slot panel where you will let Ba'al Bot know the
     exact X, Y, and Z coordinates it must travel to when mounting and
     dismounting tools or picking up seeds from a seed container. Advance
     the tour to figure out the coordinates for this first slot.`);
 
   export const EDIT_SLOT_COORDINATES_SETUP_GENESIS =
-    trim(`In real life, load one of FarmBot's tools (such as the watering
+    trim(`In real life, load one of Ba'al Bot tools (such as the watering
     nozzle) into a toolbay slot. Then, using the controls popup, instruct
-    FarmBot to find the home position.`);
+    Ba'al Bot to find the home position.`);
 
   export const EDIT_SLOT_COORDINATES_SETUP_EXPRESS =
     trim(`Insert a luer lock needle into the 3-in-1 tool head and place a
     seed trough into the gantry-mounted seed trough holder. Then, using the
-    controls popup, instruct FarmBot to find the home position.`);
+    controls popup, instruct Ba'al Bot to find the home position.`);
 
   export const EDIT_SLOT_COORDINATES_GENESIS =
-    trim(`Using the manual controls, instruct FarmBot to move towards the
+    trim(`Using the manual controls, instruct Ba'al Bot to move towards the
     tool and slot. As you get closer, change the MOVE AMOUNT to a smaller
     value for finer movements. Your goal is to position the UTM just above
     the tool and then descend down onto it (mounting it). Once the UTM has
     mounted the tool, click the blue button next to the slot's X, Y, and Z
-    fields to save FarmBot's current position to the slot.`);
+    fields to save Ba'al Bot current position to the slot.`);
 
   export const EDIT_SLOT_COORDINATES_EXPRESS =
-    trim(`Using the manual controls, instruct FarmBot to move towards the
+    trim(`Using the manual controls, instruct Ba'al Bot to move towards the
     seed trough. As you get closer, change the MOVE AMOUNT to a smaller
     value for finer movements. Your goal is to position the needle just
     above the trough and then descend down into it until the tip of the
     needle is 3 to 5mm from the bottom of the trough. Click the blue button
-    next to the slot's X, Y, and Z fields to save FarmBot's current
+    next to the slot's X, Y, and Z fields to save Ba'al Bot current
     position to the slot.`);
 
   export const SETTING_UP_SLOTS_MINOR_ADJUSTMENTS =
@@ -1487,23 +1487,23 @@ export namespace TourContent {
 
   // Monitoring
   export const LOCATION_GRID =
-    trim(`View FarmBot's current location using the axis position display.`);
+    trim(`View Ba'al Bot current location using the axis position display.`);
 
   export const VIRTUAL_FARMBOT =
-    trim(`Or view FarmBot's current location in the virtual garden.`);
+    trim(`Or view Ba'al Bot current location in the virtual garden.`);
 
   export const LOGS_TABLE =
     trim(`View recent log messages here. More detailed log messages can be
     shown by adjusting filter settings.`);
 
   export const PHOTOS =
-    trim(`View photos your FarmBot has taken here.`);
+    trim(`View photos your Ba'al Bot has taken here.`);
 }
 
 export namespace SetupWizardContent {
   export const INTRO =
     trim(`Welcome to the setup wizard. This process will guide you through
-    the steps necessary to get your FarmBot set up and running. Each step
+    the steps necessary to get your Ba'al Bot set up and running. Each step
     will include an action to perform and a question about the outcome, which
     can be answered yes or no. Answering yes will continue to the next step,
     while answering no will display a list of results that can be selected for
@@ -1515,34 +1515,34 @@ export namespace SetupWizardContent {
     and running faster.`);
 
   export const OFFLINE =
-    trim(`Unable to connect to FarmBot. Please reconnect FarmBot to continue.`);
+    trim(`Unable to connect to Ba'al Bot. Please reconnect Ba'al Bot to continue.`);
 
   export const NO_SETUP_NETWORK =
     trim(`Try waiting three minutes from power on. Check the Raspberry
     Pi power LED. Check that the SD is fully inserted. Try downloading a new
-    FarmBot OS image, ensuring that the device model is correct. Try
+    Ba'al Bot OS image, ensuring that the device model is correct. Try
     re-flashing the SD card via Etcher. If possible, ensure line-of-sight
     between devices when trying to connect.`);
 
-  export const MAP_ORIENTATION =
-    trim(`Watch the video below showing how to match the virtual FarmBot
-    map to your real life FarmBot. The relevant controls are available
-    below the video for your convenience.`);
+  // export const MAP_ORIENTATION =
+  //   trim(`Watch the video below showing how to match the virtual Ba'al Bot
+  //   map to your real life Ba'al Bot. The relevant controls are available
+  //   below the video for your convenience.`);
 
   export const FIND_MAP_ORIGIN =
     trim(`Find the origin in the map. The origin is at the coordinate (0, 0),
     with arrows pointing along the X and Y axes.`);
 
   export const PRESS_RIGHT_JOG_BUTTON =
-    trim(`Standing from where you will normally view the FarmBot,
+    trim(`Standing from where you will normally view the Ba'al Bot,
     **press the right arrow button**.`);
 
   export const PRESS_UP_JOG_BUTTON =
-    trim(`Standing from where you will normally view the FarmBot,
+    trim(`Standing from where you will normally view the Ba'al Bot,
     **press the up arrow button**.`);
 
   export const PRESS_DOWN_JOG_BUTTON =
-    trim(`Standing from where you will normally view the FarmBot,
+    trim(`Standing from where you will normally view the Ba'al Bot,
     **press the z-axis down arrow button**.`);
 
   export const NO_MOTOR_MOVEMENT =
@@ -1552,61 +1552,61 @@ export namespace SetupWizardContent {
     trim(`Check motor cable connections. Try again while observing
     electronics box LED activity.`);
 
-  export const CONTROLS_VIDEO =
-    trim(`Watch the video below showing how to match the manual controls to
-    your real life FarmBot. Once you have finished watching, proceed to the
-    next setup steps to test and set the controls for each axis.`);
+  // export const CONTROLS_VIDEO =
+  //   trim(`Watch the video below showing how to match the manual controls to
+  //   your real life Ba'al Bot. Once you have finished watching, proceed to the
+  //   next setup steps to test and set the controls for each axis.`);
 
   export const X_HOME_PROMPT =
-    trim(`Are FarmBot's gantry wheel plates touching the hardstops at the
+    trim(`Are Ba'al Bot gantry wheel plates touching the hardstops at the
     end of the tracks?`);
 
   export const HOME_X =
-    trim(`Press the home button or move FarmBot's x-axis (with the controls
+    trim(`Press the home button or move Ba'al Bot x-axis (with the controls
     or manually) until the plates hit the hardstops.`);
 
   export const Y_HOME_PROMPT =
-    trim(`Is FarmBot's cross-slide plate touching the hardstop at the end of
+    trim(`Is Ba'al Bot cross-slide plate touching the hardstop at the end of
     the gantry main beam?`);
 
   export const HOME_Y =
-    trim(`Press the home button or move FarmBot's y-axis (with the controls
+    trim(`Press the home button or move Ba'al Bot y-axis (with the controls
       or manually) until the plate hits the hardstop.`);
 
   export const Z_HOME_PROMPT =
-    trim(`Is FarmBot's z-axis hardstop touching the cross-slide plate?`);
+    trim(`Is Ba'al Bot z-axis hardstop touching the cross-slide plate?`);
 
   export const HOME_Z =
-    trim(`Press the home button or move FarmBot's z-axis (with the controls
+    trim(`Press the home button or move Ba'al Bot z-axis (with the controls
       or manually) until the plate hits the hardstop.`);
 
-  export const MOVEMENTS_VIDEO =
-    trim(`Watch the video below demonstrating movements along the full
-    length of the axes. Once you have finished watching, proceed to the
-    next setup steps to test movements along the full length of each axis.`);
+  // export const MOVEMENTS_VIDEO =
+  //   trim(`Watch the video below demonstrating movements along the full
+  //   length of the axes. Once you have finished watching, proceed to the
+  //   next setup steps to test movements along the full length of each axis.`);
 
   export const X_AXIS_MOVEMENTS =
-    trim(`Use the manual controls to move FarmBot along the full length of
+    trim(`Use the manual controls to move Ba'al Bot along the full length of
     the X-axis in both directions.`);
 
   export const X_AXIS_MOVEMENTS_QUESTION =
-    trim(`Is the FarmBot able to move reliably along the full length of the
+    trim(`Is the Ba'al Bot able to move reliably along the full length of the
     X-axis in both directions?`);
 
   export const Y_AXIS_MOVEMENTS =
-    trim(`Use the manual controls to move FarmBot along the full length of
+    trim(`Use the manual controls to move Ba'al Bot along the full length of
     the Y-axis in both directions.`);
 
   export const Y_AXIS_MOVEMENTS_QUESTION =
-    trim(`Is the FarmBot able to move reliably along the full length of the
+    trim(`Is the Ba'al Bot able to move reliably along the full length of the
     Y-axis in both directions?`);
 
   export const Z_AXIS_MOVEMENTS =
-    trim(`Use the manual controls to move FarmBot along the full length of
+    trim(`Use the manual controls to move Ba'al Bot along the full length of
     the Z-axis in both directions.`);
 
   export const Z_AXIS_MOVEMENTS_QUESTION =
-    trim(`Is the FarmBot able to move reliably along the full length of the
+    trim(`Is the Ba'al Bot able to move reliably along the full length of the
     Z-axis in both directions?`);
 
   export const MOVEMENT_STALLS =
@@ -1625,9 +1625,9 @@ export namespace SetupWizardContent {
     trim(`It seems like it is trying to move too fast, or doesn't have
     enough torque`);
 
-  export const MOVEMENT_SETTINGS =
-    trim(`Watch the video below and make small adjustments to the motor
-    speed and current settings.`);
+  // export const MOVEMENT_SETTINGS =
+  //   trim(`Watch the video below and make small adjustments to the motor
+  //   speed and current settings.`);
 
   export const TOGGLE_PERIPHERAL =
     trim(`Press the {{ toggle }} toggle, wait a few seconds, and then press
@@ -1651,19 +1651,19 @@ export namespace SetupWizardContent {
     power cable.`);
 
   export const NETWORK_PORTS =
-    trim(`If you are installing FarmBot at a school or enterprise where the
+    trim(`If you are installing Ba'al Bot at a school or enterprise where the
     internet network is managed by an IT department, you must ensure that
-    certain ports are opened to allow FarmBot to fully connect to the web
-    app. If you are installing FarmBot in one of these locations, have your
-    IT department review the following help page to ensure FarmBot will be
+    certain ports are opened to allow Ba'al Bot to fully connect to the
+    app. If you are installing Ba'al Bot in one of these locations, have your
+    IT department review the following help page to ensure Ba'al Bot will be
     able to fully connect once configured.`);
 
   export const NETWORK_PORTS_QUESTION =
     trim(`Has your IT department confirmed that the necessary ports are
-    opened or are you installing FarmBot at home?`);
+    opened or are you installing Ba'al Bot at home?`);
 
   export const ETHERNET_OPTION =
-    trim(`Most people connect their FarmBot to the internet over WiFi,
+    trim(`Most people connect their Ba'al Bot to the internet over WiFi,
     though you may optionally use a hardwired ethernet connection. If you
     would like to use an ethernet connection, simply connect an ethernet
     cable between your WiFi router and the Raspberry Pi.`);
@@ -1673,7 +1673,7 @@ export namespace SetupWizardContent {
     cable?`);
 
   export const CONFIGURATOR_CONNECTION_PROMPT =
-    trim(`Is your phone or computer connected to the FarmBot WiFi network?`);
+    trim(`Is your phone or computer connected to the Ba'al Bot WiFi network?`);
 
   export const CHECK_CAMERA_CABLE =
     trim(`Check that the camera is plugged in to a Raspberry Pi USB port
@@ -1693,7 +1693,7 @@ export namespace SetupWizardContent {
     surface and is fully and clearly visible to the camera.
     The card must not be warped, bent, overexposed, or obscured in the
     above image. Lighting may be improved by shading the card from direct
-    sunlight, trying a different time of day, or using FarmBot's lights in
+    sunlight, trying a different time of day, or using Ba'al Bot lights in
     the evening or at night. There must be good contrast between the white
     dots and black calibration card background for calibration to
     complete successfully. Trying calibration in a different location with
@@ -1705,7 +1705,7 @@ export namespace SetupWizardContent {
 
   export const CAMERA_ALIGNMENT =
     trim(`Find a detail in the image at the soil level where the coordinates
-    are known (for example, a spot watered by FarmBot), and compare the known
+    are known (for example, a spot watered by Ba'al Bot), and compare the known
     coordinates against the location for the detail shown in the map.`);
 
   export const CHECK_TOOL_CONNECTIONS =
@@ -1724,8 +1724,8 @@ export namespace SetupWizardContent {
 export enum DeviceSetting {
   axisHeadingLabels = ``,
 
-  // FarmBot
-  farmbotSettings = `FarmBot`,
+  // Ba'al Bot
+  farmbotSettings = `Ba'al Bot`,
   name = `name`,
   orderNumber = `Order Number`,
   timezone = `timezone`,
@@ -1841,8 +1841,8 @@ export enum DeviceSetting {
   // Farm Designer
   farmDesigner = `Farm Designer`,
   animations = `Plant animations`,
-  trail = `Virtual FarmBot trail`,
-  mapMissedSteps = `FarmBot motor load`,
+  trail = `Virtual Ba'al Bot trail`,
+  mapMissedSteps = `Ba'al Bot motor load`,
   dynamicMap = `Dynamic map size`,
   mapSize = `Map size`,
   rotateMap = `Rotate map`,
@@ -1875,8 +1875,8 @@ export enum DeviceSetting {
   showRemovedWeedsMapLayer = `Show Removed Weeds Map Layer`,
   showSpread = `Spread`,
   showSpreadMapLayer = `Show Spread Map Layer`,
-  showFarmbot = `FarmBot`,
-  showFarmbotMapLayer = `Show FarmBot Map Layer`,
+  showFarmbot = `Ba'al Bot`,
+  showFarmbotMapLayer = `Show Ba'al Bot Map Layer`,
   showPhotos = `Photos`,
   showPhotosMapLayer = `Show Photos Map Layer`,
   showAreas = `Areas`,
@@ -1925,12 +1925,12 @@ export enum DeviceSetting {
   enableSequenceCompleteLogs = `Enable sequence complete logs`,
 
   // App
-  internationalizeWebApp = `Internationalize Web App`,
+  internationalizeWebApp = `Internationalize App`,
   use24hourTimeFormat = `Use 24-hour time format`,
   showSecondsInTime = `Show seconds in time`,
   hideWebcamWidget = `Hide Webcam widget`,
   hideSensorsPanel = `Hide Sensors panel`,
-  readSpeakLogsInBrowser = `Read speak logs in browser`,
+  readSpeakLogsInBrowser = `Read speak logs in application`,
   discardUnsavedChanges = `Discard Unsaved Changes`,
   confirmEmergencyUnlock = `Confirm emergency unlock`,
   userInterfaceReadOnlyMode = `User Interface Read Only Mode`,
@@ -1940,47 +1940,47 @@ export enum DeviceSetting {
 export namespace DiagnosticMessages {
   export const OK = trim(`All systems nominal.`);
 
-  export const MISC = trim(`Some other issue is preventing FarmBot from
+  export const MISC = trim(`Some other issue is preventing Ba'al Bot from
     working. Please see the table above for more information.`);
 
-  export const TOTAL_BREAKAGE = trim(`There is no access to FarmBot or the
+  export const TOTAL_BREAKAGE = trim(`There is no access to Ba'al Bot or the
     message broker. This is usually caused by outdated browsers
     (Internet Explorer) or firewalls that block WebSockets on port 3002.`);
 
-  export const REMOTE_FIREWALL = trim(`FarmBot and the browser are both
-    connected to the internet (or have been recently). Try rebooting FarmBot
-    and refreshing the browser. If the issue persists, something may be
-    preventing FarmBot from accessing the message broker (used to communicate
-    with your web browser in real-time). If you are on a company or school
+  export const REMOTE_FIREWALL = trim(`Ba'al Bot and the application are both
+    connected to the internet (or have been recently). Try rebooting Ba'al Bot
+    and refreshing the application. If the issue persists, something may be
+    preventing Ba'al Bot from accessing the message broker (used to communicate
+    with your application in real-time). If you are on a company or school
     network, a firewall may be blocking port 5672 or port 8883. Ensure that
-    the blue LED communications light on the FarmBot electronics box is
+    the blue LED communications light on the Ba'al Bot electronics box is
     illuminated.`);
 
-  export const WIFI_OR_CONFIG = trim(`Your browser is connected correctly,
-    but we have no recent record of FarmBot connecting to the internet.
+  export const WIFI_OR_CONFIG = trim(`Your application is connected correctly,
+    but we have no recent record of Ba'al Bot connecting to the internet.
     This usually happens because of poor WiFi connectivity in the garden,
     a bad password during configuration, a very long power outage, or
-    blocked ports on FarmBot's local network. Please refer IT staff to:`);
+    blocked ports on Ba'al Bot local network. Please refer IT staff to:`);
 
-  export const NO_WS_AVAILABLE = trim(`You are either offline, using a web
-   browser that does not support WebSockets, or are behind a firewall that
-   blocks port 3002. Do not attempt to debug FarmBot hardware until you solve
+  export const NO_WS_AVAILABLE = trim(`You are either offline, using a
+   application that does not support WebSockets, or are behind a firewall that
+   blocks port 3002. Do not attempt to debug Ba'al Bot hardware until you solve
    this issue first. You will not be able to troubleshoot hardware issues
-   without a reliable browser and internet connection.`);
+   without a reliable application and internet connection.`);
 
-  export const INACTIVE = trim(`FarmBot and the browser both have internet
-    connectivity, but we haven't seen any activity from FarmBot on the Web
-    App in a while. This could mean that FarmBot has not synced in a while,
+  export const INACTIVE = trim(`Ba'al Bot and the application both have internet
+    connectivity, but we haven't seen any activity from Ba'al Bot on the
+    App in a while. This could mean that Ba'al Bot has not synced in a while,
     which might not be a problem. If you are experiencing usability issues,
-    however, it could be a sign of HTTP blockage on FarmBot's local internet
+    however, it could be a sign of HTTP blockage on Ba'al Bot local internet
     connection.`);
 
   export const ARDUINO_DISCONNECTED = trim(`Farmduino firmware is missing.
     Press the yellow FLASH FIRMWARE button to flash the firmware to your
-    FarmBot. Verify FIRMWARE selection matches FarmBot kit version and
+    Ba'al Bot. Verify FIRMWARE selection matches Ba'al Bot kit version and
     check the USB cable between the Raspberry Pi and the Farmduino.
-    Reboot FarmBot after a reconnection. If the issue persists,
-    reconfiguration of FarmBot OS may be necessary.`);
+    Reboot Ba'al Bot after a reconnection. If the issue persists,
+    reconfiguration of Ba'al Bot OS may be necessary.`);
 }
 
 export enum Actions {

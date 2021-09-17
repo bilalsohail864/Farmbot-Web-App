@@ -37,7 +37,7 @@ import {
 import { seedAccount } from "../messages/actions";
 import { FirmwareHardware, TaggedLog, Xyz } from "farmbot";
 import { ConnectivityDiagram } from "../devices/connectivity/diagram";
-import { Diagnosis } from "../devices/connectivity/diagnosis";
+// import { Diagnosis } from "../devices/connectivity/diagnosis";
 import { connectivityData } from "../devices/connectivity/generate_data";
 import { sourceFwConfigValue } from "../settings/source_config_value";
 import { findHome, setHome, settingToggle } from "../devices/actions";
@@ -343,7 +343,7 @@ export const Connectivity = (props: WizardStepComponentProps) => {
   });
   return <div className={"connectivity"}>
     <ConnectivityDiagram rowData={data.rowData} />
-    <Diagnosis statusFlags={data.flags} />
+    {/* <Diagnosis statusFlags={data.flags} /> */}
   </div>;
 };
 

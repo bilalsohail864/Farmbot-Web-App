@@ -372,7 +372,7 @@
         display: block;
       }
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (min-width: 150px) {
       .fa-arrows-v, .fa-ellipsis-v {
         display: block;
         margin-right: 0.5rem;

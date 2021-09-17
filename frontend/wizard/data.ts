@@ -22,8 +22,8 @@ import {
   InvertJogButton,
   SwapJogButton,
   DisableStallDetection,
-  RotateMapToggle,
-  SelectMapOrigin,
+  // RotateMapToggle,
+  // SelectMapOrigin,
   SensorsCheck,
   CameraOffset,
   FindHome,
@@ -33,15 +33,15 @@ import {
   CurrentPosition,
   EthernetPortImage,
   CameraImageOrigin,
-  MapOrientation,
+  // MapOrientation,
   Tour,
-  NetworkRequirementsLink,
+  // NetworkRequirementsLink,
 } from "./checks";
 import { FirmwareHardware, TaggedWizardStepResult } from "farmbot";
 import { hasUTM } from "../settings/firmware/firmware_hardware_support";
 import { GetWebAppConfigValue } from "../config_storage/actions";
 import { BooleanSetting } from "../session_keys";
-import { ExternalUrl } from "../external_urls";
+// import { ExternalUrl } from "../external_urls";
 
 export const setupProgressString = (
   results: TaggedWizardStepResult[],
@@ -241,7 +241,6 @@ export const WIZARD_STEPS = (
       slug: WizardStepSlug.networkPorts,
       title: t("Open network ports"),
       content: t(SetupWizardContent.NETWORK_PORTS),
-      component: NetworkRequirementsLink,
       question: t(SetupWizardContent.NETWORK_PORTS_QUESTION),
       outcomes: [],
     },
@@ -280,7 +279,7 @@ export const WIZARD_STEPS = (
       section: WizardSectionSlug.connectivity,
       slug: WizardStepSlug.configuratorNetwork,
       title: t("Configurator network"),
-      content: t("Connect to the `farmbot-xxxx` WiFi network"),
+      content: t(""),
       question: t(SetupWizardContent.CONFIGURATOR_CONNECTION_PROMPT),
       outcomes: [
         {
@@ -294,7 +293,7 @@ export const WIZARD_STEPS = (
       section: WizardSectionSlug.connectivity,
       slug: WizardStepSlug.configuratorBrowser,
       title: t("Configurator"),
-      content: t("Open a browser and navigate to `setup.farm.bot`"),
+      content: t(""),
       question: t("Is the configurator loaded?"),
       outcomes: [
         {
@@ -352,29 +351,29 @@ export const WIZARD_STEPS = (
         },
       ],
     },
-    {
-      section: WizardSectionSlug.map,
-      slug: WizardStepSlug.mapOrientation,
-      title: t("Map Orientation"),
-      content: t(SetupWizardContent.MAP_ORIENTATION),
-      video: ExternalUrl.Video.mapOrientation,
-      component: MapOrientation,
-      question: t("Does the virtual FarmBot match your real life FarmBot?"),
-      outcomes: [
-        {
-          slug: "rotated",
-          description: t("The map is rotated incorrectly"),
-          tips: "",
-          component: RotateMapToggle,
-        },
-        {
-          slug: "incorrectOrigin",
-          description: t("The map origin is in a different corner"),
-          tips: t("Select the correct map origin."),
-          component: SelectMapOrigin,
-        },
-      ],
-    },
+    // {
+    //   section: WizardSectionSlug.map,
+    //   slug: WizardStepSlug.mapOrientation,
+    //   title: t("Map Orientation"),
+    //   content: t(SetupWizardContent.MAP_ORIENTATION),
+    //   video: ExternalUrl.Video.mapOrientation,
+    //   component: MapOrientation,
+    //   question: t("Does the virtual FarmBot match your real life FarmBot?"),
+    //   outcomes: [
+    //     {
+    //       slug: "rotated",
+    //       description: t("The map is rotated incorrectly"),
+    //       tips: "",
+    //       component: RotateMapToggle,
+    //     },
+    //     {
+    //       slug: "incorrectOrigin",
+    //       description: t("The map origin is in a different corner"),
+    //       tips: t("Select the correct map origin."),
+    //       component: SelectMapOrigin,
+    //     },
+    //   ],
+    // },
     {
       section: WizardSectionSlug.motors,
       slug: WizardStepSlug.xMotor,
@@ -472,15 +471,15 @@ export const WIZARD_STEPS = (
         },
       ],
     },
-    {
-      section: WizardSectionSlug.controls,
-      slug: WizardStepSlug.controlsVideo,
-      title: t("Manual controls video"),
-      content: t(SetupWizardContent.CONTROLS_VIDEO),
-      video: ExternalUrl.Video.manualControls,
-      question: t("Did you watch the video?"),
-      outcomes: [],
-    },
+    // {
+    //   section: WizardSectionSlug.controls,
+    //   slug: WizardStepSlug.controlsVideo,
+    //   title: t("Manual controls video"),
+    //   content: t(SetupWizardContent.CONTROLS_VIDEO),
+    //   video: ExternalUrl.Video.manualControls,
+    //   question: t("Did you watch the video?"),
+    //   outcomes: [],
+    // },
     {
       section: WizardSectionSlug.controls,
       slug: WizardStepSlug.xAxis,
@@ -682,15 +681,15 @@ export const WIZARD_STEPS = (
         },
       ],
     },
-    {
-      section: WizardSectionSlug.movements,
-      slug: WizardStepSlug.movementsVideo,
-      title: t("Movements video"),
-      content: t(SetupWizardContent.MOVEMENTS_VIDEO),
-      video: ExternalUrl.Video.movements,
-      question: t("Did you watch the video?"),
-      outcomes: [],
-    },
+    // {
+    //   section: WizardSectionSlug.movements,
+    //   slug: WizardStepSlug.movementsVideo,
+    //   title: t("Movements video"),
+    //   content: t(SetupWizardContent.MOVEMENTS_VIDEO),
+    //   video: ExternalUrl.Video.movements,
+    //   question: t("Did you watch the video?"),
+    //   outcomes: [],
+    // },
     {
       section: WizardSectionSlug.movements,
       slug: WizardStepSlug.xAxisMovement,
@@ -709,18 +708,18 @@ export const WIZARD_STEPS = (
           description: t("It struggles to move along the whole length of the axis"),
           tips: t(SetupWizardContent.MOVEMENT_ALL_X),
         },
-        {
-          slug: "untuned",
-          description: t(SetupWizardContent.MOVEMENT_SETTINGS_DESCRIPTION),
-          tips: t(SetupWizardContent.MOVEMENT_SETTINGS),
-          video: ExternalUrl.Video.motorTuning,
-          firmwareNumberSettings: [
-            { key: "movement_min_spd_x", label: t("x-axis minimum speed") },
-            { key: "movement_max_spd_x", label: t("x-axis maximum speed") },
-            { key: "movement_steps_acc_dec_x", label: t("x-axis acceleration") },
-            { key: "movement_motor_current_x", label: t("x-axis motor current") },
-          ],
-        },
+        // {
+        //   slug: "untuned",
+        //   description: t(SetupWizardContent.MOVEMENT_SETTINGS_DESCRIPTION),
+        //   tips: t(SetupWizardContent.MOVEMENT_SETTINGS),
+        //   video: ExternalUrl.Video.motorTuning,
+        //   firmwareNumberSettings: [
+        //     { key: "movement_min_spd_x", label: t("x-axis minimum speed") },
+        //     { key: "movement_max_spd_x", label: t("x-axis maximum speed") },
+        //     { key: "movement_steps_acc_dec_x", label: t("x-axis acceleration") },
+        //     { key: "movement_motor_current_x", label: t("x-axis motor current") },
+        //   ],
+        // },
       ],
     },
     {
@@ -741,18 +740,18 @@ export const WIZARD_STEPS = (
           description: t("It struggles to move along the whole length of the axis"),
           tips: t(SetupWizardContent.MOVEMENT_ALL_Y_AND_Z),
         },
-        {
-          slug: "untuned",
-          description: t(SetupWizardContent.MOVEMENT_SETTINGS_DESCRIPTION),
-          tips: t(SetupWizardContent.MOVEMENT_SETTINGS),
-          video: ExternalUrl.Video.motorTuning,
-          firmwareNumberSettings: [
-            { key: "movement_min_spd_y", label: t("y-axis minimum speed") },
-            { key: "movement_max_spd_y", label: t("y-axis maximum speed") },
-            { key: "movement_steps_acc_dec_y", label: t("y-axis acceleration") },
-            { key: "movement_motor_current_y", label: t("y-axis motor current") },
-          ],
-        },
+        // {
+        //   slug: "untuned",
+        //   description: t(SetupWizardContent.MOVEMENT_SETTINGS_DESCRIPTION),
+        //   tips: t(SetupWizardContent.MOVEMENT_SETTINGS),
+        //   video: ExternalUrl.Video.motorTuning,
+        //   firmwareNumberSettings: [
+        //     { key: "movement_min_spd_y", label: t("y-axis minimum speed") },
+        //     { key: "movement_max_spd_y", label: t("y-axis maximum speed") },
+        //     { key: "movement_steps_acc_dec_y", label: t("y-axis acceleration") },
+        //     { key: "movement_motor_current_y", label: t("y-axis motor current") },
+        //   ],
+        // },
       ],
     },
     {
@@ -773,18 +772,18 @@ export const WIZARD_STEPS = (
           description: t("It struggles to move along the whole length of the axis"),
           tips: t(SetupWizardContent.MOVEMENT_ALL_Y_AND_Z),
         },
-        {
-          slug: "untuned",
-          description: t(SetupWizardContent.MOVEMENT_SETTINGS_DESCRIPTION),
-          tips: t(SetupWizardContent.MOVEMENT_SETTINGS),
-          video: ExternalUrl.Video.motorTuning,
-          firmwareNumberSettings: [
-            { key: "movement_min_spd_z", label: t("z-axis minimum speed") },
-            { key: "movement_max_spd_z", label: t("z-axis maximum speed") },
-            { key: "movement_steps_acc_dec_z", label: t("z-axis acceleration") },
-            { key: "movement_motor_current_z", label: t("z-axis motor current") },
-          ],
-        },
+        // {
+        //   slug: "untuned",
+        //   description: t(SetupWizardContent.MOVEMENT_SETTINGS_DESCRIPTION),
+        //   tips: t(SetupWizardContent.MOVEMENT_SETTINGS),
+        //   video: ExternalUrl.Video.motorTuning,
+        //   firmwareNumberSettings: [
+        //     { key: "movement_min_spd_z", label: t("z-axis minimum speed") },
+        //     { key: "movement_max_spd_z", label: t("z-axis maximum speed") },
+        //     { key: "movement_steps_acc_dec_z", label: t("z-axis acceleration") },
+        //     { key: "movement_motor_current_z", label: t("z-axis motor current") },
+        //   ],
+        // },
       ],
     },
     {

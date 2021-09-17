@@ -3,7 +3,7 @@ import { connect, ConnectedComponent } from "react-redux";
 import { error, warning } from "./toast/toast";
 import { NavBar } from "./nav";
 import { Everything, TimeSettings } from "./interfaces";
-import { LoadingPlant } from "./loading_plant";
+// import { LoadingPlant } from "./loading_plant";
 import { BotState, UserEnv } from "./devices/interfaces";
 import {
   ResourceName, TaggedUser, TaggedLog, Xyz, Alert, FirmwareHardware,
@@ -142,9 +142,9 @@ export class RawApp extends React.Component<AppProps, {}> {
     const { location_data, mcu_params } = bot.hardware;
     const { busy, locked } = bot.hardware.informational_settings;
     return <div className="app">
-      {!syncLoaded && <LoadingPlant animate={this.props.animate} />}
-      <HotKeys dispatch={dispatch} />
-      {syncLoaded && <NavBar
+      {/* {!syncLoaded && <LoadingPlant animate={this.props.animate} />} */}
+      {/* <HotKeys dispatch={dispatch} /> */}
+      {/* {syncLoaded && <NavBar
         timeSettings={this.props.timeSettings}
         user={this.props.user}
         bot={bot}
@@ -158,7 +158,7 @@ export class RawApp extends React.Component<AppProps, {}> {
         apiFirmwareValue={this.props.apiFirmwareValue}
         authAud={this.props.authAud}
         wizardStepResults={this.props.wizardStepResults}
-        pings={this.props.pings} />}
+        pings={this.props.pings} />} */}
       {syncLoaded && this.props.children}
       {showControlsPopup() &&
         <ControlsPopup

@@ -1,23 +1,23 @@
 .panel-nav,
 .farm-designer-panels {
   position: fixed;
-  top: 8.9rem;
+  top: 0rem;
   width: 45rem;
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 150px) {
     width: 100%;
   }
 }
 
 .panel-nav {
   display: none;
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 150px) {
     display: block;
   }
 }
 
 .panel-top {
   margin-top: 0;
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 150px) {
     margin-top: 5rem;
   }
 }
@@ -30,7 +30,7 @@
   .panel-content {
     padding-top: 1rem;
     max-height: calc(100vh - 3rem);
-    @media screen and (max-width: 450px) {
+    @media screen and (min-width: 150px) {
       padding-top: 6rem;
       max-height: calc(100vh - 9rem);
     }
@@ -47,7 +47,7 @@
 .controls-panel {
   .panel-content {
     padding-top: 0;
-    @media screen and (max-width: 450px) {
+    @media screen and (min-width: 150px) {
       padding-top: 4rem;
     }
   }
@@ -97,7 +97,7 @@
 .settings-panel {
   .panel-content {
     max-height: calc(100vh - 14rem);
-    @media screen and (max-width: 450px) {
+    @media screen and (min-width: 150px) {
       max-height: calc(100vh - 19rem);
     }
   }
@@ -1374,7 +1374,7 @@
   padding-bottom: inherit;
   .non-empty-state {
     max-height: calc(100vh - 14rem);
-    @media screen and (max-width: 450px) {
+    @media screen and (min-width: 150px) {
       max-height: calc(100vh - 19rem);
     }
     overflow-y: auto;
@@ -2150,7 +2150,7 @@
     }
     .non-empty-state {
       max-height: calc(100vh - 15rem);
-      @media screen and (max-width: 450px) {
+      @media screen and (min-width: 150px) {
         max-height: calc(100vh - 19rem);
       }
       overflow-y: scroll;
@@ -2184,7 +2184,7 @@
     input {
       margin: 1rem;
       width: 84%;
-      @media screen and (max-width: 450px) {
+      @media screen and (min-width: 150px) {
         width: 65%;
       }
     }
@@ -2261,7 +2261,7 @@
 .support-panel,
 .tours-panel,
 .help-panel {
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 150px) {
     .help-panel-header {
       position: relative;
       margin-top: 5rem;
@@ -2460,8 +2460,8 @@
 }
 
 .desktop-hide {
-  display: none !important;
-  @media screen and (max-width: 1075px) {
+  // display: none !important;
+  @media screen and (min-width: 150px) {
     display: block !important;
   }
 }

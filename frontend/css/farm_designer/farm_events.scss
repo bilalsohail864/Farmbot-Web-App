@@ -12,7 +12,7 @@
 
 .farm-events {
   max-height: calc(100vh - 15rem);
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 150px) {
     max-height: calc(100vh - 20rem);
   }
   overflow-y: auto;

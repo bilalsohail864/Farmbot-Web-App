@@ -24,7 +24,7 @@ import { mapStateToProps } from "./state_to_props";
 import { Actions } from "../constants";
 import { ExtraSettings } from "../farm_designer/map/easter_eggs/bugs";
 import { OtherSettings } from "./other_settings";
-import { AccountSettings } from "./account/account_settings";
+// import { AccountSettings } from "./account/account_settings";
 import { DevSettingsRows } from "./dev/dev_settings";
 import { bulkToggleControlPanel, ToggleSettingsOpen } from "./toggle_section";
 import { EnvEditor } from "../photos/data_management/env_editor";
@@ -149,9 +149,9 @@ export class RawDesignerSettings
           botOnline={botOnline} />
         <Designer {...commonProps}
           getConfigValue={getConfigValue} />
-        <AccountSettings {...commonProps}
+        {/* <AccountSettings {...commonProps}
           user={this.props.user}
-          getConfigValue={getConfigValue} />
+          getConfigValue={getConfigValue} /> */}
         <OtherSettings {...commonProps}
           searchTerm={this.props.searchTerm}
           getConfigValue={getConfigValue}
