@@ -917,7 +917,7 @@ export namespace Content {
 
   export const MAP_MISSED_STEPS =
     trim(`Display high motor load warning indicators in map.
-    Requires VIRTUAL FARMBOT TRAIL and stall detection to be enabled.`);
+    Requires VIRTUAL BA'ALBOT TRAIL and stall detection to be enabled.`);
 
   export const DYNAMIC_MAP_SIZE =
     trim(`Change the garden map size based on axis length.
@@ -1016,10 +1016,10 @@ export namespace Content {
     for: `);
 
   export const REBOOT_STEP =
-    trim(`Power cycle Ba'al Bot onboard computer.`);
+    trim(`Power cycle Ba'al Bot onboard Mobile.`);
 
   export const SHUTDOWN_STEP =
-    trim(`Power down Ba'al Bot onboard computer.`);
+    trim(`Power down Ba'al Bot onboard Mobile.`);
 
   export const ESTOP_STEP =
     trim(`Unlocking a device requires user intervention.`);
@@ -1368,9 +1368,8 @@ export namespace TourContent {
     height at maturity. Click ADD TO MAP and then advance the tour.`);
 
   export const CLICK_TO_ADD =
-    trim(`Click anywhere in the map to add an individual plant. If you are
-    on a desktop or laptop computer, you may also drag and drop the crop
-    icon into the map. If you want to make any location adjustments or
+    trim(`Click anywhere in the map to add an individual plant. 
+    If you want to make any location adjustments or
     delete plants, you can do that in a few steps from now. Ready to add a
     lot of plants at once? Go to the next step of the tour!`);
 
@@ -1673,7 +1672,7 @@ export namespace SetupWizardContent {
     cable?`);
 
   export const CONFIGURATOR_CONNECTION_PROMPT =
-    trim(`Is your phone or computer connected to the Ba'al Bot WiFi network?`);
+    trim(`Is your phone connected to the Ba'al Bot WiFi network?`);
 
   export const CHECK_CAMERA_CABLE =
     trim(`Check that the camera is plugged in to a Raspberry Pi USB port
@@ -1747,8 +1746,8 @@ export enum DeviceSetting {
 
   // Power and Reset
   powerAndReset = `Power and Reset`,
-  restartFarmbot = `Restart Farmbot`,
-  shutdownFarmbot = `Shutdown Farmbot`,
+  restartFarmbot = `Restart Ba'albot`,
+  shutdownFarmbot = `Shutdown Ba'albot`,
   softReset = `Soft Reset`,
   hardReset = `Hard Reset`,
   changeOwnership = `Change Ownership`,

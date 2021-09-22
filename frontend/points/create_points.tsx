@@ -278,7 +278,7 @@ export class RawCreatePoints
               }));
           }
         }}>
-        {t("use FarmBot's current position")}
+        {t("use Ba'alBot's current position")}
       </button>
       <ListItem name={t("Size")}>
         <Row>

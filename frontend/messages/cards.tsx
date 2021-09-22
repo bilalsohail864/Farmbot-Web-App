@@ -154,7 +154,7 @@ const FirmwareChoiceTable = () =>
   <table className="firmware-hardware-choice-table">
     <thead>
       <tr>
-        <th>{t("FarmBot Version")}</th>
+        <th>{t("Ba'alBot Version")}</th>
         <th>{t("Electronics Board")}</th>
         <th>{t("Firmware Name")}</th>
       </tr>
@@ -280,7 +280,7 @@ class SeedDataMissing
     return <AlertCardTemplate
       alert={this.props.alert}
       className={"seed-data-missing-alert"}
-      title={t("Choose your FarmBot")}
+      title={t("Choose your Ba'alBot")}
       message={t(Content.SEED_DATA_SELECTION)}
       timeSettings={this.props.timeSettings}
       dispatch={this.props.dispatch}
@@ -289,7 +289,7 @@ class SeedDataMissing
       iconName={"check-square"}>
       <Row>
         <Col xs={4}>
-          <label>{t("Choose your FarmBot")}</label>
+          <label>{t("Choose your Ba'alBot")}</label>
         </Col>
         <Col xs={5}>
           <FBSelect
@@ -345,7 +345,7 @@ const UserNotWelcomed = (props: CommonAlertCardProps) =>
   <AlertCardTemplate
     alert={props.alert}
     className={"user-not-welcomed-alert"}
-    title={t("Welcome to the FarmBot Web App")}
+    title={t("Welcome to the Ba'alBot App")}
     message={t(Content.WELCOME)}
     timeSettings={props.timeSettings}
     dispatch={props.dispatch}

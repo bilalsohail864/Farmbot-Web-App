@@ -1,6 +1,6 @@
 import React from "react";
-import { Session } from "./session";
-import { ExternalUrl } from "./external_urls";
+// import { Session } from "./session";
+// import { ExternalUrl } from "./external_urls";
 
 const OUTER_STYLE: React.CSSProperties = {
   borderRadius: "10px",
@@ -33,26 +33,28 @@ export function Apology(_: {}) {
         <li>
           Refresh the page.
         </li>
-        <li>
+        {/* <li>
           {"Perform a \"hard refresh\""}
           (<strong>CTRL + SHIFT + R</strong> on most machines).
-        </li>
+        </li> */}
         <li>
-          <span>
+        Logout from app and login again.
+         
+          {/* <span>
             <a onClick={() => Session.clear()}>
               Restart the app by clicking here.
             </a>
             &nbsp;(You will be logged out of your account.)
-          </span>
+          </span> */}
         </li>
-        <li>
+        {/* <li>
           <span>
             Send a report to our developer team via the&nbsp;
             <a href={ExternalUrl.softwareForum}>FarmBot software
             forum</a>. Including additional information (such as steps leading up
             to the error) helps us identify solutions more quickly.
           </span>
-        </li>
+        </li> */}
       </ol>
     </div>
   </div>;

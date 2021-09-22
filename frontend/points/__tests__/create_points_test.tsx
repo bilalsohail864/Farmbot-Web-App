@@ -189,7 +189,7 @@ describe("<CreatePoints />", () => {
     const wrapper = mount<CreatePoints>(<CreatePoints {...p} />);
     wrapper.setState({ cx: 10, cy: 20, r: 30 });
     jest.resetAllMocks();
-    clickButton(wrapper, 0, "use FarmBot's current position");
+    clickButton(wrapper, 0, "use Ba'alBot's current position");
     expect(p.dispatch).not.toHaveBeenCalled();
     expect(wrapper.state()).toEqual({ cx: 10, cy: 20, r: 30 });
   });

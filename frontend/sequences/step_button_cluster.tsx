@@ -85,7 +85,7 @@ export function StepButtonCluster(props: StepButtonProps) {
       step={{
         kind: "send_message",
         args: {
-          message: t("FarmBot is at position ") + "{{ x }}, {{ y }}, {{ z }}.",
+          message: t("Ba'alBot is at position ") + "{{ x }}, {{ y }}, {{ z }}.",
           message_type: MessageType.success
         }
       }}

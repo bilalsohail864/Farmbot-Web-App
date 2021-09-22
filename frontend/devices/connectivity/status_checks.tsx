@@ -40,7 +40,7 @@ export function botToAPI(
   StatusRowProps {
   return {
     connectionName: "botAPI",
-    from: "FarmBot",
+    from: "Ba'alBot",
     to: t("Web App"),
     connectionStatus: isApiUp(lastSawApi, now),
     connectionMsg: lastSeen(lastSawApi),
@@ -62,7 +62,7 @@ export function botToMQTT(status: ConnectionStatus | undefined):
   StatusRowProps {
   return {
     connectionName: "botMQTT",
-    from: "FarmBot",
+    from: "Ba'alBot",
     to: t("Message Broker"),
     connectionStatus: isUp(status),
     connectionMsg: lastSeenUp(status),

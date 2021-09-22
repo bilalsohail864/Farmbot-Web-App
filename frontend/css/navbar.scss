@@ -1,9 +1,10 @@
 .nav-wrapper {
   position: fixed;
   left: 0;
+  top:20px;
   right: 0;
-  z-index: 99;
-  height: 8.9rem;
+  z-index: 1;
+  height: 0rem;
   background: $dark_gray;
   box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
 }
@@ -171,7 +172,7 @@ nav {
   .setup-button,
   .connectivity-button {
     display: inline;
-    border: 1px solid $white;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 0.8rem;
     font-weight: bold;
@@ -193,7 +194,7 @@ nav {
       font-weight: bold;
     }
   }
-  @media screen and (min-width: 150px) {
+  @media screen and (max-width: 150px) {
     .connectivity-button {
       border: none;
       p {
@@ -201,6 +202,13 @@ nav {
       }
     }
   }
+
+  // .baal-connectivity-button{
+  //   border: 1px solid;
+  //   padding: 3px;
+  //   margin: 10px;
+  //   border-radius: 5px;
+  // }
   .connection-status-popover {
     display: inline;
     .bp3-popover-wrapper {
@@ -344,3 +352,4 @@ nav {
     display: none !important;
   }
 }
+

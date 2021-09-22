@@ -34,7 +34,7 @@ export const DiagnosisSaucer = (props: DiagnosisSaucerProps) => {
   ];
   return <div className={classes.join(" ")}
     title={title}>
-    <i className={`fa fa-${diagnosisBoolean ? "check" : "times"}`} />
+      <i className={`fa fa-${diagnosisBoolean ? "check" : "times"}`} />
   </div>;
 };
 
@@ -54,7 +54,7 @@ export function Diagnosis(props: DiagnosisProps) {
         <p className="blinking">
           {t("Always")}&nbsp;
           <a className="blinking" onClick={goToFbosSettings}>
-            <u>{t("upgrade FarmBot OS")}</u>
+            <u>{t("upgrade Ba'alBot OS")}</u>
           </a>
             &nbsp;{t("before troubleshooting.")}
         </p>

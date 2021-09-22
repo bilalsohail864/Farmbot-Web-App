@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, ConnectedComponent } from "react-redux";
-import { error, warning } from "./toast/toast";
+import { error } from "./toast/toast";
 import { NavBar } from "./nav";
 import { Everything, TimeSettings } from "./interfaces";
 // import { LoadingPlant } from "./loading_plant";
@@ -41,7 +41,7 @@ import { HelpState } from "./help/reducer";
 import { TourStepContainer } from "./help/tours";
 import { ToastMessages } from "./toast/interfaces";
 import { Toasts } from "./toast/fb_toast";
-import Bowser from "bowser";
+// import Bowser from "bowser";
 
 export interface AppProps {
   dispatch: Function;
@@ -131,9 +131,10 @@ export class RawApp extends React.Component<AppProps, {}> {
         error(t(Content.APP_LOAD_TIMEOUT_MESSAGE), { title: t("Warning") });
       }
     }, LOAD_TIME_FAILURE_MS);
-    const browser = Bowser.getParser(window.navigator.userAgent);
-    !browser.satisfies({ chrome: ">85", firefox: ">75", edge: ">85" }) &&
-      warning(t(Content.UNSUPPORTED_BROWSER));
+
+    // const browser = Bowser.getParser(window.navigator.userAgent);
+    // !browser.satisfies({ chrome: ">85", firefox: ">75", edge: ">85" }) &&
+    //   warning(t(Content.UNSUPPORTED_BROWSER));
   }
 
   render() {
@@ -143,8 +144,8 @@ export class RawApp extends React.Component<AppProps, {}> {
     const { busy, locked } = bot.hardware.informational_settings;
     return <div className="app">
       {/* {!syncLoaded && <LoadingPlant animate={this.props.animate} />} */}
-      {/* <HotKeys dispatch={dispatch} /> */}
-      {/* {syncLoaded && <NavBar
+      <HotKeys dispatch={dispatch} />
+      {syncLoaded && <NavBar
         timeSettings={this.props.timeSettings}
         user={this.props.user}
         bot={bot}
@@ -158,7 +159,7 @@ export class RawApp extends React.Component<AppProps, {}> {
         apiFirmwareValue={this.props.apiFirmwareValue}
         authAud={this.props.authAud}
         wizardStepResults={this.props.wizardStepResults}
-        pings={this.props.pings} />} */}
+        pings={this.props.pings} />}
       {syncLoaded && this.props.children}
       {showControlsPopup() &&
         <ControlsPopup

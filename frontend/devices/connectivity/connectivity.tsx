@@ -1,6 +1,6 @@
 import React from "react";
 import { BotState } from "../interfaces";
-import { Diagnosis, ConnectionStatusFlags, getDiagnosisCode } from "./diagnosis";
+import {  ConnectionStatusFlags, getDiagnosisCode } from "./diagnosis";
 import { ConnectivityRow, StatusRowProps } from "./connectivity_row";
 import { Row, Col } from "../../ui";
 import { ConnectivityDiagram } from "./diagram";
@@ -59,7 +59,7 @@ export class Connectivity
             hover={this.hover}
             hoveredConnection={this.state.hoveredConnection} />
           <div className="fbos-info">
-            <label>{t("FarmBot Info")}</label>
+            <label>{t("Ba'alBot Info")}</label>
             <p><b>{t("Device ID")}: </b>{id}</p>
             {controller_version
               ? <p><b>{t("Version")}: </b>{

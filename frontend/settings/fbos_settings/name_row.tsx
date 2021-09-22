@@ -11,7 +11,7 @@ export class NameRow extends React.Component<NameRowProps> {
   NameInput = () =>
     <input name="name"
       className={getModifiedClassNameSpecifyDefault(
-        this.props.device.body.name, "FarmBot",
+        this.props.device.body.name, "Ba'alBot",
       )}
       onChange={e => this.props.dispatch(edit(this.props.device, {
         name: e.currentTarget.value

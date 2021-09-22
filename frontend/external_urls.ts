@@ -32,6 +32,23 @@ export namespace ExternalUrl {
   const MY_FARMBOT_WEB_APP = "https://my.farm.bot";
   const OPEN_STREET_MAP = "https://www.openstreetmap.org";
 
+  /**  const GITHUB = "";
+  const GITHUB_RAW = "";
+  const GITHUB_API = "";
+  const OPENFARM = "";
+  const GENESIS_DOCS = "";
+  const EXPRESS_DOCS = "";
+  const META_DOCS = "";
+  const EDU_DOCS = "";
+  const SOFTWARE_DOCS = "";
+  const DEVELOPER_DOCS = "";
+  const FORUM = "";
+  const SHOPIFY_CDN = "";
+  const YOUTUBE = "";
+  const FARMBOT = "";
+  const MY_FARMBOT_WEB_APP = "";
+  const OPEN_STREET_MAP = ""; */
+
   export const openStreetMap = (latitude: number, longitude: number) =>
     `${OPEN_STREET_MAP}/?mlat=${latitude}&mlon=${longitude}&zoom=10`;
 

@@ -298,8 +298,8 @@ export class DesignerNavTabs
         <NavTab panel={Panel.Photos} />
         {showFarmware() && <NavTab panel={Panel.Farmware} />}
         <NavTab panel={Panel.Tools} />
-        <NavTab panel={Panel.Messages} />
-        <NavTab panel={Panel.Help} />
+        {/* <NavTab panel={Panel.Messages} /> */}
+        {/* <NavTab panel={Panel.Help} /> */}
         <NavTab panel={Panel.Settings} />
       </div>
     </div>;
